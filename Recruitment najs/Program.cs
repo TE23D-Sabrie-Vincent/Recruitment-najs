@@ -34,5 +34,12 @@
 // // }
 // // System.Console.WriteLine(names[1]);
 
+List<string> somebois = ["Theodor sked", "Simon ligma", "Greta Grötberg", "Konstantin den lilla", "Lester mod", "Batman", "Patrick Bateman"];
+
+List<string> currentbois = [];
+
+while (currentbois.Count < 4){
+
+}
 Console.ReadLine();
 
