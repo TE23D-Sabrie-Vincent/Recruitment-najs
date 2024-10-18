@@ -34,12 +34,48 @@
 // // }
 // // System.Console.WriteLine(names[1]);
 
+using System.Diagnostics;
+
 List<string> somebois = ["Theodor sked", "Simon ligma", "Greta Grötberg", "Konstantin den lilla", "Lester mod", "Batman", "Patrick Bateman"];
 
 List<string> currentbois = [];
 
-while (currentbois.Count < 4){
+while (currentbois.Count < 4)
+{
 
+    System.Console.WriteLine(">>>Alla dina fina Recruits<<<");
+    for (int i = 0; i < somebois.Count; i++)
+    {
+        System.Console.WriteLine($"{i + 1} {somebois[i]}");
+    }
+
+    Console.WriteLine("\n-- Current recruits --");
+    for (int i = 0; i < currentbois.Count; i++)
+    {
+        Console.WriteLine($"{currentbois[i]}");
+    }
+
+    string BoiNum = Console.ReadLine();
+    int BoiChoice;
+
+
+    // int.TryParse()
+
+    if (int.TryParse(BoiNum, out BoiChoice))
+    {
+        
+
+        if (BoiChoice > 7 || BoiChoice <= 1)
+        {
+            System.Console.WriteLine($"Bra val! du tog {somebois[BoiChoice - 1]}! ");
+        }
+    }
+
+    else
+    {
+        System.Console.WriteLine("ajabaja");
+    }
+
+    Console.ReadLine();
 }
-Console.ReadLine();
 

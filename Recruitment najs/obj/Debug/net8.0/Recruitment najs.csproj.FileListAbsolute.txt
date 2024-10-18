@@ -12,3 +12,4 @@ C:\Users\vincent.sabrie\Desktop\Programmering 1\Recruitment najs\Recruitment naj
 C:\Users\vincent.sabrie\Desktop\Programmering 1\Recruitment najs\Recruitment najs\obj\Debug\net8.0\Recruitment najs.pdb
 C:\Users\vincent.sabrie\Desktop\Programmering 1\Recruitment najs\Recruitment najs\obj\Debug\net8.0\Recruitment najs.genruntimeconfig.cache
 C:\Users\vincent.sabrie\Desktop\Programmering 1\Recruitment najs\Recruitment najs\obj\Debug\net8.0\ref\Recruitment najs.dll
+C:\Users\vincent.sabrie\Desktop\Programmering 1\Recruitment najs\Recruitment najs\obj\Debug\net8.0\Recruitment najs.sourcelink.json
