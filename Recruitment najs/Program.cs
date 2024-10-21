@@ -23,6 +23,7 @@
 // // System.Console.WriteLine(names[i]);
 // // }
 
+
 // // string name = Console.ReadLine();
 // // if (name == names[1])
 // // {
@@ -78,7 +79,7 @@ while (currentbois.Count < 4)
     {
         System.Console.WriteLine("Jag accepterar inte bokstäver, bara nummer");
     }
-   
+
 
 
     Console.ReadLine();
