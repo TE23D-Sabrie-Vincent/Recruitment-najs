@@ -42,17 +42,20 @@ List<string> currentbois = [];
 
 while (currentbois.Count < 4)
 {
-
-    System.Console.WriteLine(">>>Alla dina fina Recruits<<<");
+    Console.Clear();
+    System.Console.WriteLine(">>>Alla dina fina Recruits som du kan välja<<<");
     for (int i = 0; i < somebois.Count; i++)
     {
         System.Console.WriteLine($"{i + 1} {somebois[i]}");
+
     }
+
 
     Console.WriteLine("\n-- Current recruits --");
     for (int i = 0; i < currentbois.Count; i++)
     {
         Console.WriteLine($"{currentbois[i]}");
+
     }
 
     string BoiNum = Console.ReadLine();
@@ -63,18 +66,27 @@ while (currentbois.Count < 4)
 
     if (int.TryParse(BoiNum, out BoiChoice))
     {
-        
 
-        if (BoiChoice > 7 || BoiChoice <= 1)
+
+        if (BoiChoice <= somebois.Count() && BoiChoice >= 1)
         {
             System.Console.WriteLine($"Bra val! du tog {somebois[BoiChoice - 1]}! ");
+            currentbois.Add(somebois[BoiChoice - 1]);
+            somebois.Remove(somebois[BoiChoice - 1]);
+
         }
+
+        else
+        {
+            System.Console.WriteLine("ajabaja");
+        }
+
+    }
+    for (int i = 0; i > currentbois.Count; i++)
+    {
+        System.Console.WriteLine($"{currentbois[i]}");
     }
 
-    else
-    {
-        System.Console.WriteLine("ajabaja");
-    }
 
     Console.ReadLine();
 }
