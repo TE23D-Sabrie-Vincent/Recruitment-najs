@@ -1,5 +1,4 @@
-﻿// // See https://aka.ms/new-console-template for more information
-// // 
+﻿//Kommentarer från genomgången om Listor, Ta inte bort detta 
 
 // List<string> names = ["Vinny", "Vincent", "Theodor (usch)"];
 // names[1] = "Teddy";
@@ -24,9 +23,6 @@
 // // System.Console.WriteLine(names[i]);
 // // }
 
-
-
-
 // // string name = Console.ReadLine();
 // // if (name == names[1])
 // // {
@@ -34,7 +30,6 @@
 // // }
 // // System.Console.WriteLine(names[1]);
 
-using System.Diagnostics;
 
 List<string> somebois = ["Theodor sked", "Simon ligma", "Greta Grötberg", "Konstantin den lilla", "Lester mod", "Batman", "Patrick Bateman"];
 
@@ -61,9 +56,6 @@ while (currentbois.Count < 4)
     string BoiNum = Console.ReadLine();
     int BoiChoice;
 
-
-    // int.TryParse()
-
     if (int.TryParse(BoiNum, out BoiChoice))
     {
 
@@ -82,10 +74,11 @@ while (currentbois.Count < 4)
         }
 
     }
-    for (int i = 0; i > currentbois.Count; i++)
+    else
     {
-        System.Console.WriteLine($"{currentbois[i]}");
+        System.Console.WriteLine("Jag accepterar inte bokstäver, bara nummer");
     }
+   
 
 
     Console.ReadLine();
